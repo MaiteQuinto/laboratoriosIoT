@@ -1,0 +1,62 @@
+# Creado por https://www.toptal.com/developers/gitignore/api/c
+# Editar en https://www.toptal.com/developers/gitignore?templates=c
+
+### C ###
+#MCUXpresso
+/K32L2B31A_labs_diplomado_iot\K32L2B31A_labs_diplomado_iot/Debug/
+/K32L2B31A_labs_diplomado_iot\K32L2B31A_labs_diplomado_iot/Release/
+
+# requisitos previos
+*.d
+
+# archivos de objetos
+*.o
+*.ko
+*.obj
+*.duende
+
+# Salida del enlazador
+*.ilk
+*.mapa
+*.Exp
+
+# encabezados precompilados
+*.gch
+*.pch
+
+# Bibliotecas
+*.lib
+*.a
+*.la
+*.lo
+
+# Objetos compartidos (incluidas las DLL de Windows)
+*.dll
+*.asi que
+*.asi que.*
+*.dylib
+
+# ejecutables
+*.exe
+*.afuera
+*.aplicación
+*.i*86
+*.x86_64
+*.maleficio
+
+# Archivos de depuración
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Resultados de la compilación del módulo Kernel
+*.modificación*
+*.cmd
+.tmp_versiones/
+módulos.pedir
+Módulo.symvers
+Mkfile.antiguo
+dkms.conf
+
+# Fin de https://www.toptal.com/developers/gitignore/api/c
