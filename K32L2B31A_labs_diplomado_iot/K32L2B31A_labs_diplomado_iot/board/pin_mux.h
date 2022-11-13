@@ -25,11 +25,39 @@ extern "C" {
  */
 void BOARD_InitBootPins(void);
 
+/*! @name PORTE31 (number 19), LED2
+  @{ */
+
+/* Symbols to be used with GPIO driver */
+#define BOARD_LED_FGPIO FGPIOE              /*!<@brief FGPIO peripheral base pointer */
+#define BOARD_LED_GPIO GPIOE                /*!<@brief GPIO peripheral base pointer */
+#define BOARD_LED_GPIO_PIN_MASK (1U << 31U) /*!<@brief GPIO pin mask */
+
+/* Symbols to be used with PORT driver */
+#define BOARD_LED_PORT PORTE                /*!<@brief PORT peripheral base pointer */
+#define BOARD_LED_PIN 31U                   /*!<@brief PORT pin number */
+#define BOARD_LED_PIN_MASK (1U << 31U)      /*!<@brief PORT pin mask */
+                                            /* @} */
+
+/*! @name PORTD5 (number 62), J2[12]/D13/SPI1_SCK/LED1/LCD_P45
+  @{ */
+
+/* Symbols to be used with GPIO driver */
+#define BOARD_LEDD_FGPIO FGPIOD             /*!<@brief FGPIO peripheral base pointer */
+#define BOARD_LEDD_GPIO GPIOD               /*!<@brief GPIO peripheral base pointer */
+#define BOARD_LEDD_GPIO_PIN_MASK (1U << 5U) /*!<@brief GPIO pin mask */
+
+/* Symbols to be used with PORT driver */
+#define BOARD_LEDD_PORT PORTD               /*!<@brief PORT peripheral base pointer */
+#define BOARD_LEDD_PIN 5U                   /*!<@brief PORT pin number */
+#define BOARD_LEDD_PIN_MASK (1U << 5U)      /*!<@brief PORT pin mask */
+                                            /* @} */
+
 /*!
  * @brief Configures pin routing and optionally pin electrical features.
  *
  */
-void BOARD_InitPins(void);
+void BOARD_Initsensorluz(void);
 
 /*! @name PORTB18 (number 41), J1[1]/LCD_P14
   @{ */
